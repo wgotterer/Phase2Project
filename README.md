@@ -13,6 +13,10 @@ Using the https://www.themealdb.com/api.php API we will create a single page web
 
 Within the Home page there will be a nav bar at the top that allows the user to navigate to a favorites list and a search by country link. 
 
-The favoirites page will make a fetch in a useEffect() to get all 
+The favorites page will render all the favorited recipes. On initial display you will see just the picture and and name and with a click you can individually display the full recipe. We will also have a form to make a new recipe. 
+
+
+
+In the search by category link a there will be a list of categories in the header (vegetarian, pork, dessert, etc). On the onlcik a GET request will be made to the search by id end point https://www.themealdb.com/api/json/v1/1/filter.php?c=Vegetarian. Food cards will then render underneath with a small picture and name. The user can then click a specific meal and have the full recipe appear on the side or underneath all the food cards. This will be done by making another fetch request using the "idMeal" number with the id number endpoint https://www.themealdb.com/api/json/v1/1/lookup.php?i=52807.  Food card should have an add to favorite button. 
 
 
